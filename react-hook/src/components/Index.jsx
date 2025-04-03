@@ -14,15 +14,16 @@ function Index() {
       model: "1",
       year: "1996",
       color: "red",
-      img: "C:UsershpPicturesSaved Pictures96338fa84c373e3db4121205f745438c.jpg",
+      img: "https://www.istockphoto.com/photo/new-life-in-forest-gm1911602365-554827711?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=nature",
     });
-    const updateColor=()=>{
-      setCar({
+    const updateColor = () => {
+      setCar((prevState) => ({
+        ...prevState, // Spread operator to keep existing properties
         color: "blue",
-        img: "C:UsershpPictureskal.jpg",
-      });
+        img: "https://example.com/new-image.jpg", // Replace with a valid image URL
+      }));
+    };
 
-    }
 
   return (
     <div>
